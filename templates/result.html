@@ -1,0 +1,16 @@
+<!-- result.html -->
+<div class="result-card">
+    <h2>{{ company }} Stock Prediction</h2>
+    <div class="result-item"><strong>Last Close:</strong> {{ last_close }}</div>
+    <div class="result-item"><strong>Predicted Close:</strong> {{ predicted_price }}</div>
+    <div class="result-item"><strong>Trend:</strong> {{ trend }}</div>
+    <div class="result-item"><strong>Investment Suggestion:</strong> {{ suggestion }}</div>
+
+    <div class="final-advice">{{ final_advice }}</div>
+
+    <!-- 📊 Display Prediction Graph -->
+    <div style="margin-top: 25px;">
+        <h3>Prediction Graph:</h3>
+        <img src="{{ url_for('static', filename=graph_file) }}" alt="Prediction Graph" style="max-width:100%; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+    </div>
+</div>
