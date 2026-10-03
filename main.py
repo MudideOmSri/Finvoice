@@ -33,12 +33,12 @@ languages = {
 }
 
 company_mapping = {
-    "hdfc": "HDFC_Bank.csv",
-    "tcs": "TCS.csv",
-    "reliance": "RELIANCE.csv",
-    "infosys": "INFOSYS.csv",
-    "hindustan": "HINDUSTAN.csv",
-    "itc": "ITC.csv"
+    "hdfc": "data/HDFC_Bank.csv",
+    "tcs": "data/TCS.csv",
+    "reliance": "data/RELIANCE.csv",
+    "infosys": "data/INFOSYS.csv",
+    "hindustan": "data/HINDUSTAN.csv",
+    "itc": "data/ITC.csv"
 }
 
 def set_background(png_file_path):
@@ -151,7 +151,7 @@ def suggest_investment(last, predicted):
 
 # UI setup
 st.set_page_config(page_title="FinVoice", layout="centered")
-set_background("D:/PROJECT/image2.png")
+set_background("D:\project2-2\Project Code\Finvoice_Background_img.JPEG")
 st.markdown("""
     <style>
     /* Remove dark overlay */
